@@ -1,0 +1,10 @@
+[
+  {
+    "topic": "Compare the current EV strategies of Tata Mot...",
+    "baseline_score": 2.75,
+    "multiagent_score": 4.75,
+    "baseline_time": 7.37,
+    "multiagent_time": 6.61,
+    "winner": "Multi-Agent"
+  }
+]
