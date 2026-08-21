@@ -89,3 +89,8 @@ Call delete_database().
 Interview Question : "How would you evaluate an AI agent?"
 
 "I'd evaluate the agent at multiple levels: final answer quality, factuality and groundedness, retrieval quality, tool selection and tool arguments, task completion, trajectory efficiency, latency and cost. I'd build a representative evaluation dataset with expected outcomes and use a combination of deterministic checks, automated metrics, LLM-as-a-judge, and human evaluation for ambiguous cases. I'd also trace individual agent runs so failures can be attributed to retrieval, reasoning, tool use, or generation rather than only judging the final response."
+
+
+agent trajectory : 
+the full sequence of steps, tool calls, reasoning thoughts, and environmental observations an AI agent makes from start to finish while trying to solve a task.
+

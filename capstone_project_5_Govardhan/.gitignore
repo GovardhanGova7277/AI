@@ -30,7 +30,7 @@ htmlcov/
 # ==========================================
 # 3. Project Configuration & Secrets
 # ==========================================
-# Never commit your active secrets/keys!
+Never commit your active secrets/keys!
 .env
 .secrets
 *.env.*
