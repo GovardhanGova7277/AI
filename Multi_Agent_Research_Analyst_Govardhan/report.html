@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project-5: Multi-Agent Research Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-deep: #0e0e10;
+            --bg-surface: #151517;
+            --bg-card: #1a1a1e;
+            --bg-card-hover: #222226;
+            --bg-elevated: #222226;
+            --border-subtle: rgba(255,255,255,0.06);
+            --border-medium: rgba(255,255,255,0.10);
+            --border-accent: rgba(232,133,58,0.30);
+            --text-primary: #ececec;
+            --text-secondary: #929298;
+            --text-muted: #5c5c64;
+            --accent: #e8853a;
+            --accent-bright: #f09840;
+            --accent-dim: rgba(232,133,58,0.10);
+            --accent-glow: rgba(232,133,58,0.12);
+            --warn: #e8c44a;
+            --warn-dim: rgba(232,196,74,0.10);
+            --danger: #e85d6f;
+            --danger-dim: rgba(232,93,111,0.10);
+            --info: #6ba3f7;
+            --info-dim: rgba(107,163,247,0.10);
+            --purple: #a882ff;
+            --purple-dim: rgba(168,130,255,0.10);
+            --code-bg: #111113;
+            --gradient-accent: linear-gradient(135deg, #e8853a 0%, #d07028 100%);
+            --gradient-header: linear-gradient(160deg, #18181b 0%, #0e0e10 40%, #141418 100%);
+            --shadow-card: 0 2px 12px rgba(0,0,0,0.4), 0 0 0 1px var(--border-subtle);
+            --shadow-elevated: 0 8px 32px rgba(0,0,0,0.5), 0 0 0 1px var(--border-subtle);
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: -25%;
+            right: -15%;
+            width: 650px;
+            height: 650px;
+            background: radial-gradient(circle, rgba(232,133,58,0.035) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -20%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(107,163,247,0.02) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .report-container {
+            position: relative;
+            z-index: 1;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* ===== HEADER ===== */
+        .report-header {
+            position: relative;
+            background: var(--gradient-header);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-xl);
+            padding: 56px 48px 48px;
+            margin-bottom: 48px;
+            overflow: hidden;
+            box-shadow: var(--shadow-elevated);
+        }
+        .report-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+        }
+        .report-header::after {
+            content: '';
+            position: absolute;
+            top: -80px; right: -80px;
+            width: 280px; height: 280px;
+            background: radial-gradient(circle, rgba(232,133,58,0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-dim);
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 100px;
+            border: 1px solid var(--border-accent);
+            margin-bottom: 20px;
+        }
+        .header-badge i { font-size: 0.7rem; }
+
+        .report-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+        .report-title span {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .report-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            max-width: 680px;
+            font-weight: 400;
+        }
+
+        .tech-stack-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 28px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-subtle);
+        }
+        .tech-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 100px;
+            border: 1px solid var(--border-subtle);
+            transition: all 0.2s ease;
+        }
+        .tech-chip:hover {
+            border-color: var(--border-medium);
+            color: var(--text-primary);
+            background: var(--bg-card-hover);
+        }
+        .tech-chip i { font-size: 0.72rem; color: var(--accent); }
+
+        /* ===== SECTIONS ===== */
+        .section { margin-bottom: 48px; }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, var(--border-accent), transparent);
+        }
+
+        .section-title {
+            font-size: 1.65rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            line-height: 1.25;
+        }
+
+        /* ===== OBJECTIVE BOX ===== */
+        .objective-box {
+            position: relative;
+            background: var(--bg-card);
+            border: 1px solid var(--border-medium);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius-md);
+            padding: 28px 32px;
+            box-shadow: var(--shadow-card);
+        }
+        .objective-box .label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .objective-box p {
+            font-size: 1rem;
+            color: var(--text-primary);
+            line-height: 1.75;
+        }
+
+        /* ===== CONCEPT CARDS ===== */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        @media (max-width: 700px) {
+            .concept-grid { grid-template-columns: 1fr; }
+        }
+
+        .concept-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            transition: all 0.25s ease;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+        }
+        .concept-card:hover {
+            border-color: var(--border-medium);
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-elevated);
+        }
+        .concept-card.full-width { grid-column: 1 / -1; }
+
+        .concept-card .card-icon {
+            width: 40px; height: 40px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+        .card-icon.orange { background: var(--accent-dim); color: var(--accent); }
+        .card-icon.blue   { background: var(--info-dim); color: var(--info); }
+        .card-icon.amber  { background: var(--warn-dim); color: var(--warn); }
+        .card-icon.red    { background: var(--danger-dim); color: var(--danger); }
+
+        .concept-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .concept-card p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .concept-card code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.78rem;
+            background: var(--code-bg);
+            color: var(--accent);
+            padding: 2px 7px;
+            border-radius: 4px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        /* ===== ARCHITECTURE DIAGRAM ===== */
+        .arch-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            box-shadow: var(--shadow-card);
+            overflow-x: auto;
+        }
+        .arch-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            min-width: 520px;
+        }
+
+        .arch-node {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-md);
+            padding: 14px 24px;
+            min-width: 260px;
+            justify-content: center;
+            transition: all 0.25s ease;
+        }
+        .arch-node:hover {
+            border-color: var(--border-accent);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+        .arch-node.planner     { border-color: rgba(232,133,58,0.35); }
+        .arch-node.researcher  { border-color: rgba(107,163,247,0.35); }
+        .arch-node.critic      { border-color: rgba(232,196,74,0.35); }
+        .arch-node.synthesizer { border-color: rgba(168,130,255,0.35); }
+        .arch-node.end {
+            border-color: rgba(232,133,58,0.5);
+            background: var(--accent-dim);
+        }
+
+        .arch-node i { font-size: 0.9rem; }
+        .arch-node.planner i     { color: var(--accent); }
+        .arch-node.researcher i  { color: var(--info); }
+        .arch-node.critic i      { color: var(--warn); }
+        .arch-node.synthesizer i { color: var(--purple); }
+        .arch-node.end i         { color: var(--accent); }
+
+        .arch-node .node-label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .arch-node .node-sub {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            margin-left: auto;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .arch-arrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px 0;
+            color: var(--text-muted);
+            font-size: 0.68rem;
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 0.05em;
+        }
+        .arch-arrow .arrow-line {
+            width: 2px;
+            height: 22px;
+            background: linear-gradient(to bottom, var(--border-medium), var(--text-muted));
+            border-radius: 2px;
+        }
+        .arch-arrow .arrow-head {
+            width: 0; height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid var(--text-muted);
+        }
+
+        .fan-out-group {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            position: relative;
+        }
+        .fan-out-group::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--border-medium) 15%, var(--border-medium) 85%, transparent);
+        }
+        .fan-branch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+        .fan-branch .branch-stem {
+            width: 2px;
+            height: 20px;
+            background: var(--border-medium);
+        }
+
+        .loop-arrow {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--warn-dim);
+            border: 1px dashed rgba(232,196,74,0.3);
+            border-radius: 100px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--warn);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* ===== PATTERN TABLE ===== */
+        .pattern-table-wrap {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+        .pattern-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        .pattern-table thead th {
+            background: var(--bg-elevated);
+            color: var(--text-secondary);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .pattern-table tbody td {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            vertical-align: top;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .pattern-table tbody tr:last-child td { border-bottom: none; }
+        .pattern-table tbody tr:hover { background: rgba(255,255,255,0.015); }
+
+        .pattern-table .pattern-name {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 0.88rem;
+            white-space: nowrap;
+        }
+        .pattern-table code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.76rem;
+            background: var(--code-bg);
+            color: var(--accent);
+            padding: 2px 7px;
+            border-radius: 4px;
+            border: 1px solid var(--border-subtle);
+            white-space: nowrap;
+        }
+        .pattern-badge {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 100px;
+            letter-spacing: 0.04em;
+        }
+        .pattern-badge.orange { background: var(--accent-dim); color: var(--accent); }
+        .pattern-badge.blue   { background: var(--info-dim); color: var(--info); }
+        .pattern-badge.amber  { background: var(--warn-dim); color: var(--warn); }
+
+        /* ===== RESULTS ===== */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 700px) {
+            .results-grid { grid-template-columns: 1fr; }
+        }
+
+        .result-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+            transition: all 0.25s ease;
+        }
+        .result-card:hover {
+            border-color: var(--border-medium);
+            transform: translateY(-2px);
+        }
+        .result-card .result-value {
+            font-size: 2.2rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            margin-bottom: 4px;
+        }
+        .result-card .result-value.orange { color: var(--accent); }
+        .result-card .result-value.blue   { color: var(--info); }
+        .result-card .result-value.amber  { color: var(--warn); }
+        .result-card .result-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        .result-card .result-sub {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .winner-banner {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--accent-dim);
+            border: 1px solid var(--border-accent);
+            border-radius: var(--radius-md);
+            padding: 18px 24px;
+            margin-bottom: 24px;
+        }
+        .winner-banner i { font-size: 1.3rem; color: var(--accent); }
+        .winner-banner .winner-text {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .winner-banner .winner-sub {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        /* ===== INSIGHT BOXES ===== */
+        .insight-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            box-shadow: var(--shadow-card);
+            margin-bottom: 16px;
+        }
+        .insight-box.warn-box { border-left: 3px solid var(--warn); }
+        .insight-box.info-box { border-left: 3px solid var(--info); }
+        .insight-box h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .insight-box h4 i { font-size: 0.85rem; }
+        .insight-box.warn-box h4 i { color: var(--warn); }
+        .insight-box.info-box h4 i { color: var(--info); }
+        .insight-box p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+
+        /* ===== PERSPECTIVES ===== */
+        .perspectives-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        @media (max-width: 700px) {
+            .perspectives-grid { grid-template-columns: 1fr; }
+        }
+
+        .perspective-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            box-shadow: var(--shadow-card);
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .perspective-card:hover {
+            border-color: var(--border-medium);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-elevated);
+        }
+        .perspective-card .persp-number {
+            position: absolute;
+            top: 16px; right: 20px;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: rgba(255,255,255,0.03);
+            line-height: 1;
+            pointer-events: none;
+        }
+        .perspective-card .persp-icon {
+            width: 36px; height: 36px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+        }
+        .perspective-card h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .perspective-card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ===== JSON BLOCK ===== */
+        .json-block {
+            background: var(--code-bg);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: 24px 28px;
+            overflow-x: auto;
+            box-shadow: var(--shadow-card);
+            margin-bottom: 24px;
+        }
+        .json-block .json-label {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+        .json-block pre {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        .json-block .jk { color: var(--info); }
+        .json-block .js { color: var(--accent); }
+        .json-block .jn { color: var(--warn); }
+
+        /* ===== FOOTER ===== */
+        .report-footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .report-footer .footer-text {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+        .report-footer .footer-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: var(--bg-card);
+            padding: 6px 14px;
+            border-radius: 100px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        /* ===== SCROLL REVEAL ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== PRINT ===== */
+        @media print {
+            body { background: #fff; color: #111; }
+            .report-header { background: #f5f5f5; border-color: #ddd; box-shadow: none; }
+            .report-title { color: #111; }
+            .report-title span { -webkit-text-fill-color: #c55a11; }
+            .concept-card, .pattern-table-wrap, .arch-wrapper, .insight-box, .perspective-card, .result-card, .json-block, .winner-banner {
+                background: #f8f8f8; border-color: #ddd; box-shadow: none;
+            }
+            .concept-card p, .insight-box p, .perspective-card p { color: #444; }
+            .section-title { color: #111; }
+            .concept-card h3, .perspective-card h4, .insight-box h4 { color: #111; }
+            .pattern-table thead th { background: #eee; color: #555; }
+            .pattern-table tbody td { color: #444; }
+            .pattern-table .pattern-name { color: #111; }
+            .reveal { opacity: 1; transform: none; }
+            .arch-node { background: #eee; border-color: #ccc; }
+            .loop-arrow { background: #fff8e1; border-color: #f0b830; color: #7a5e00; }
+            .fan-out-group::before { background: linear-gradient(to right, transparent, #bbb 15%, #bbb 85%, transparent); }
+            .arch-arrow .arrow-line, .fan-branch .branch-stem { background: #bbb; }
+            .arch-arrow .arrow-head { border-top-color: #888; }
+        }
+
+        @media (max-width: 600px) {
+            .report-header { padding: 36px 24px 32px; }
+            .report-title { font-size: 1.75rem; }
+            .arch-wrapper { padding: 20px; }
+            .pattern-table { font-size: 0.78rem; }
+            .pattern-table thead th,
+            .pattern-table tbody td { padding: 12px 14px; }
+            .fan-out-group { flex-direction: column; align-items: center; }
+            .fan-out-group::before { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-container">
+
+    <!-- COVER HEADER -->
+    <header class="report-header reveal">
+        <div class="header-badge">
+            <i class="fas fa-graduation-cap"></i>
+            Capstone Project-5
+        </div>
+        <h1 class="report-title">Multi-Agent<br><span>Research Analyst</span></h1>
+        <p class="report-subtitle">
+            Moving from a single-loop AI Agent to an Agentic AI system by orchestrating multiple specialized sub-agents, demonstrating parallel execution, shared state management, and self-correcting feedback loops.
+        </p>
+        <div class="tech-stack-bar">
+            <span class="tech-chip"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-chip"><i class="fas fa-project-diagram"></i> LangGraph</span>
+            <span class="tech-chip"><i class="fas fa-bolt"></i> Groq (Llama 3.3 70B)</span>
+            <span class="tech-chip"><i class="fas fa-search"></i> Tavily (Web Search)</span>
+            <span class="tech-chip"><i class="fas fa-desktop"></i> Streamlit</span>
+        </div>
+    </header>
+
+    <!-- OBJECTIVE -->
+    <section class="section reveal">
+        <div class="section-label">Objective</div>
+        <div class="objective-box">
+            <div class="label">Project Goal</div>
+            <p>To move from a single-loop AI Agent to an Agentic AI system by orchestrating multiple specialized sub-agents using LangGraph, demonstrating parallel execution, shared state management, and self-correcting feedback loops.</p>
+        </div>
+    </section>
+
+    <!-- CORE CONCEPTS -->
+    <section class="section reveal">
+        <div class="section-label">Foundation</div>
+        <h2 class="section-title">Core Concepts</h2>
+        <div class="concept-grid">
+            <div class="concept-card">
+                <div class="card-icon orange"><i class="fas fa-robot"></i></div>
+                <h3>Agent</h3>
+                <p>An LLM placed in a loop — LLM with Hands, LLM + Tool + System Prompt. Given a goal, it can <strong style="color:var(--text-primary)">reason and plan</strong>, use tools, observe results, and loop until the given goal is achieved.</p>
+            </div>
+            <div class="concept-card">
+                <div class="card-icon blue"><i class="fas fa-wrench"></i></div>
+                <h3>Tools</h3>
+                <p>A function or method which takes defined inputs/arguments and returns a result or performs an action. Tools act as <strong style="color:var(--text-primary)">hands</strong> that perform actions — get data, extract data, hit API requests — in external apps or systems.</p>
+            </div>
+            <div class="concept-card">
+                <div class="card-icon amber"><i class="fas fa-project-diagram"></i></div>
+                <h3>Graph</h3>
+                <p>A structure of <strong style="color:var(--text-primary)">connected nodes with edges</strong>. The graph defines the flow of data and control between different units of work, enabling complex orchestration patterns like fan-out, fan-in, and conditional loops.</p>
+            </div>
+            <div class="concept-card">
+                <div class="card-icon red"><i class="fas fa-circle-nodes"></i></div>
+                <h3>Nodes</h3>
+                <p>A unit of work in an agent graph. Programmatically, it is a function that receives the <strong style="color:var(--text-primary)">current graph state</strong>, performs an operation (calling an LLM, tool, API, database, or Python logic), and returns updates to the state.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYSTEM ARCHITECTURE -->
+    <section class="section reveal">
+        <div class="section-label">Design</div>
+        <h2 class="section-title">System Architecture</h2>
+        <div class="arch-wrapper">
+            <div class="arch-flow">
+                <div class="arch-node" style="border-color: var(--border-medium);">
+                    <i class="fas fa-user" style="color: var(--text-muted);"></i>
+                    <span class="node-label">User Query</span>
+                    <span class="node-sub">Input</span>
+                </div>
+                <div class="arch-arrow">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                </div>
+                <div class="arch-node planner">
+                    <i class="fas fa-brain"></i>
+                    <span class="node-label">Planner Node</span>
+                    <span class="node-sub">planner_node</span>
+                </div>
+                <div class="arch-arrow">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                    <span style="margin-top:2px;">DECOMPOSE</span>
+                </div>
+                <div class="fan-out-group">
+                    <div class="fan-branch">
+                        <div class="branch-stem"></div>
+                        <div class="arch-node researcher">
+                            <i class="fas fa-flask"></i>
+                            <span class="node-label">Researcher 1</span>
+                            <span class="node-sub">researcher_1</span>
+                        </div>
+                    </div>
+                    <div class="fan-branch">
+                        <div class="branch-stem"></div>
+                        <div class="arch-node researcher">
+                            <i class="fas fa-flask"></i>
+                            <span class="node-label">Researcher 2</span>
+                            <span class="node-sub">researcher_2</span>
+                        </div>
+                    </div>
+                    <div class="fan-branch">
+                        <div class="branch-stem"></div>
+                        <div class="arch-node researcher">
+                            <i class="fas fa-flask"></i>
+                            <span class="node-label">Researcher 3</span>
+                            <span class="node-sub">researcher_3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="arch-arrow" style="padding: 10px 0;">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                    <span style="margin-top:2px;">PARALLEL FAN-IN (Reducer Merge)</span>
+                </div>
+                <div class="arch-node synthesizer">
+                    <i class="fas fa-layer-group"></i>
+                    <span class="node-label">Synthesizer Node</span>
+                    <span class="node-sub">synthesizer_node</span>
+                </div>
+                <div class="arch-arrow">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                    <span style="margin-top:2px;">DRAFT</span>
+                </div>
+                <div class="arch-node critic">
+                    <i class="fas fa-clipboard-check"></i>
+                    <span class="node-label">Critic Node</span>
+                    <span class="node-sub">critic_node</span>
+                </div>
+                <div class="arch-arrow">
+                    <div class="arrow-line"></div>
+                    <div class="arrow-head"></div>
+                    <span style="margin-top:2px;">EVALUATE</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:center;">
+                    <div class="loop-arrow">
+                        <i class="fas fa-rotate-left"></i>
+                        NEEDS_REVISION &rarr; Loop back to Synthesizer (max 3)
+                    </div>
+                    <div style="color:var(--text-muted); font-size:1.2rem;">|</div>
+                    <div style="display:flex; flex-direction:column; align-items:center; gap:0;">
+                        <div class="arch-arrow" style="padding:2px 0;">
+                            <div class="arrow-line"></div>
+                            <div class="arrow-head"></div>
+                        </div>
+                        <div class="arch-node end" style="min-width:200px;">
+                            <i class="fas fa-flag-checkered"></i>
+                            <span class="node-label">END</span>
+                            <span class="node-sub">APPROVED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MULTI-AGENT PATTERN MAPPING -->
+    <section class="section reveal">
+        <div class="section-label">Orchestration</div>
+        <h2 class="section-title">Multi-Agent Pattern Mapping</h2>
+        <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:20px; line-height:1.7;">
+            The system explicitly realizes the three foundational Agentic AI patterns, each mapped directly to specific nodes and edges in the LangGraph implementation.
+        </p>
+        <div class="pattern-table-wrap">
+            <table class="pattern-table">
+                <thead>
+                    <tr>
+                        <th style="width:18%;">Course Pattern</th>
+                        <th style="width:25%;">Implementation</th>
+                        <th>How It Was Realized</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="pattern-name">Planner–Executor</span>
+                            <br><span class="pattern-badge orange">Delegation</span>
+                        </td>
+                        <td><code>planner_node</code> &rarr; <code>researcher_1,2,3</code></td>
+                        <td>The Planner LLM decomposes the complex question into 3–5 discrete sub-tasks. It does not execute the research; it only creates the execution plan for the workers.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="pattern-name">Orchestrator–Workers</span>
+                            <br><span class="pattern-badge blue">Parallelism</span>
+                        </td>
+                        <td><code>graph.py</code> Fan-out / Fan-in</td>
+                        <td>The graph draws 3 edges from the Planner to <code>researcher_1,2,3</code>. LangGraph executes these in parallel threads. They safely merge their findings using the orchestrator's reducer on the <code>findings</code> state key before feeding into the Synthesizer.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="pattern-name">Evaluator–Optimizer</span>
+                            <br><span class="pattern-badge amber">Self-Correction</span>
+                        </td>
+                        <td><code>critic_node</code> &rarr; <code>synthesizer_node</code></td>
+                        <td>A conditional edge routes the Critic's output. If the draft is <code>APPROVED</code>, it goes to <code>END</code>. If <code>NEEDS_REVISION</code>, it loops back to the Synthesizer. An iteration cap (<code>MAX_ITERATIONS = 3</code>) prevents infinite loops.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- EVALUATION & RESULTS -->
+    <section class="section reveal">
+        <div class="section-label">Benchmarking</div>
+        <h2 class="section-title">Evaluation & Baseline Comparison</h2>
+        <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:24px; line-height:1.7;">
+            To prove the value of orchestration, the system was benchmarked against a Part-1 <strong style="color:var(--text-primary)">Single-Agent Baseline</strong> (a single ReAct loop with web search). An LLM-as-Judge scored both outputs 1–5 on Coverage, Faithfulness, Citation Quality, and Coherence.
+        </p>
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-value orange">4.75</div>
+                <div class="result-label">Multi-Agent Score</div>
+                <div class="result-sub">out of 5.00</div>
+            </div>
+            <div class="result-card">
+                <div class="result-value amber">2.75</div>
+                <div class="result-label">Baseline Score</div>
+                <div class="result-sub">out of 5.00</div>
+            </div>
+            <div class="result-card">
+                <div class="result-value blue">6.61s</div>
+                <div class="result-label">Multi-Agent Latency</div>
+                <div class="result-sub">vs 7.37s baseline</div>
+            </div>
+        </div>
+        <div class="winner-banner">
+            <i class="fas fa-trophy"></i>
+            <div>
+                <div class="winner-text">Winner: Multi-Agent System</div>
+                <div class="winner-sub">72.7% score improvement over single-agent baseline, with comparable latency due to parallel execution.</div>
+            </div>
+        </div>
+        <div class="json-block">
+            <div class="json-label">LLM-as-Judge Raw Output</div>
+            <pre>[
+  {
+    <span class="jk">"topic"</span>: <span class="js">"Compare the current EV strategies of Tata Mot..."</span>,
+    <span class="jk">"baseline_score"</span>: <span class="jn">2.75</span>,
+    <span class="jk">"multiagent_score"</span>: <span class="jn">4.75</span>,
+    <span class="jk">"baseline_time"</span>: <span class="jn">7.37</span>,
+    <span class="jk">"multiagent_time"</span>: <span class="jn">6.61</span>,
+    <span class="jk">"winner"</span>: <span class="js">"Multi-Agent"</span>
+  }
+]</pre>
+        </div>
+        <div class="insight-box warn-box">
+            <h4><i class="fas fa-scale-balanced"></i> Cost & Latency Trade-off</h4>
+            <p>Agentic AI trades higher cost and latency for higher reliability. While the single-agent baseline is fast and cheap, it frequently produces shallow answers or hallucinates citations. The multi-agent system consumes significantly more Groq tokens (due to multiple planner/researcher/critic calls) and takes longer in theory, but yields structured, multi-perspective briefs with verified citations. In this benchmark, parallel execution actually made the multi-agent system slightly faster than the sequential baseline.</p>
+        </div>
+        <div class="insight-box info-box">
+            <h4><i class="fas fa-triangle-exclamation"></i> Infrastructure Note</h4>
+            <p>The multi-agent system also experienced rate-limiting (HTTP 429) on the Groq free tier during parallel researcher execution, highlighting the infrastructural requirements of Agentic systems in production deployments.</p>
+        </div>
+    </section>
+
+    <!-- NEW PERSPECTIVES -->
+    <section class="section reveal">
+        <div class="section-label">Reflections</div>
+        <h2 class="section-title">New Perspectives from Building This Project</h2>
+        <div class="perspectives-grid">
+            <div class="perspective-card">
+                <span class="persp-number">01</span>
+                <div class="persp-icon orange"><i class="fas fa-coins"></i></div>
+                <h4>Usage Cost Per Execution</h4>
+                <p>Every LLM call in the agent loop has a real cost. With multiple sub-agents (Planner, 3 Researchers, Synthesizer, Critic), token consumption multiplies rapidly. Tracking cost per execution is essential for production viability.</p>
+            </div>
+            <div class="perspective-card">
+                <span class="persp-number">02</span>
+                <div class="persp-icon blue"><i class="fas fa-gauge-high"></i></div>
+                <h4>Latency & Response Speed</h4>
+                <p>User experience demands fast responses. Targeting sub-10ms perceived latency requires careful orchestration — parallel execution, streaming outputs, and minimizing sequential LLM calls wherever possible.</p>
+            </div>
+            <div class="perspective-card">
+                <span class="persp-number">03</span>
+                <div class="persp-icon amber"><i class="fas fa-shield-halved"></i></div>
+                <h4>Security & Guardrails</h4>
+                <p>Agents that can call tools and APIs need robust input/output guardrails. Prompt injection, unauthorized tool access, and leaking sensitive data in LLM responses are real attack surfaces that must be hardened.</p>
+            </div>
+            <div class="perspective-card">
+                <span class="persp-number">04</span>
+                <div class="persp-icon red"><i class="fas fa-chart-line"></i></div>
+                <h4>Evaluation of Agent Trajectories</h4>
+                <p>Final output quality alone is insufficient. Evaluating the full agent trajectory — which tools were called, why the critic looped, whether the planner decomposed correctly — is critical for debugging and improving agent behavior.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="report-footer">
+        <span class="footer-text">Capstone Project-5 &mdash; Multi-Agent Research Analyst</span>
+        <span class="footer-badge"><i class="fas fa-code"></i> LangGraph + Groq + Tavily</span>
+    </footer>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const reveals = document.querySelectorAll('.reveal');
+        let delay = 0;
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, delay);
+                    delay += 80;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(el => observer.observe(el));
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+(venv) PS D:\G_AI\multi-agent-analyst> python main.py
+Compiling Multi-Agent Graph...
+
+
+################################################################################
+QUESTION 1 OF 6
+################################################################################
+
+================================================================================
+STARTING: Compare the current EV strategies of Tata Motors and BYD.
+================================================================================
+[PLANNER] Decomposing question: Compare the current EV strategies of Tata Motors and BYD.
+[PLANNER] Generated 3 sub-questions.
+[RESEARCHER 1] Investigating: What are the current electric vehicle models offered by Tata Motors?
+[RESEARCHER 2] Investigating: What is BYD's global electric vehicle sales strategy?
+[RESEARCHER 3] Investigating: How do the battery technologies used by Tata Motors and BYD compare in terms of range and efficiency?
+[RESEARCHER 3] Completed investigation.
+[RESEARCHER 2] Completed investigation.
+[RESEARCHER 1] Completed investigation.
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 1/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive comparison of the sales strategies of Tata Motors and BYD. It only mentions BYD's global sales strategy, but does not provide similar inf...
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 2/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive comparison of the sales strategies of Tata Motors and BYD. It only mentions BYD's global sales strategy, but does not provide a similar a...
+[ROUTER] Max iterations reached. Proceeding with current draft.
+[SAVED] Output written to outputs\Compare_the_current_EV_strategies_of_Tata_Motors_a.md
+
+
+################################################################################
+QUESTION 2 OF 6
+################################################################################
+
+================================================================================
+STARTING: What are the main causes and the latest policy responses to urban air pollution in Delhi?
+================================================================================
+[PLANNER] Decomposing question: What are the main causes and the latest policy responses to urban air pollution in Delhi?
+[PLANNER] Generated 3 sub-questions.
+[RESEARCHER 1] Investigating: What are the primary sources of air pollution in Delhi?
+[RESEARCHER 2] Investigating: What are the latest government policies and regulations aimed at reducing air pollution in Delhi?
+[RESEARCHER 3] Investigating: What are the current technological and infrastructure initiatives being implemented to mitigate urban air pollution in Delhi?
+[RESEARCHER 2] Completed investigation.
+[RESEARCHER 3] Completed investigation.
+[RESEARCHER 1] Completed investigation.
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 1/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive overview of the latest policy responses, as it only mentions a few initiatives and does not discuss their effectiveness or implementation...
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 2/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive analysis of the latest policy responses, as it only mentions a few initiatives without discussing their effectiveness or implementation c...
+[ROUTER] Max iterations reached. Proceeding with current draft.
+[SAVED] Output written to outputs\What_are_the_main_causes_and_the_latest_policy_res.md
+
+
+################################################################################
+QUESTION 3 OF 6
+################################################################################
+
+================================================================================
+STARTING: Summarise the 2024-2025 advances in small open-weight language models and who is leading.
+================================================================================
+[PLANNER] Decomposing question: Summarise the 2024-2025 advances in small open-weight language models and who is leading.
+[PLANNER] Generated 3 sub-questions.
+[RESEARCHER 1] Investigating: What are the key architectural innovations in small open-weight language models released in 2024-2025?
+[RESEARCHER 2] Investigating: Which organizations have published the most influential small open-weight language model research in 2024-2025?
+[RESEARCHER 3] Investigating: What are the benchmark performance comparisons of leading small open-weight language models from 2024-2025?
+[RESEARCHER 1] Completed investigation.
+[RESEARCHER 3] Completed investigation.
+[RESEARCHER 2] Completed investigation.
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 1/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive summary of the 2024-2025 advances in small open-weight language models, as it primarily focuses on architectural innovations, leading org...
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 2/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive summary of the 2024-2025 advances in small open-weight language models, as it primarily focuses on architectural innovations, leading org...
+[ROUTER] Max iterations reached. Proceeding with current draft.
+[SAVED] Output written to outputs\Summarise_the_2024_2025_advances_in_small_open_wei.md
+
+
+################################################################################
+QUESTION 4 OF 6
+################################################################################
+
+================================================================================
+STARTING: Assess the investment case for green hydrogen in India: drivers, risks, key players.
+================================================================================
+[PLANNER] Decomposing question: Assess the investment case for green hydrogen in India: drivers, risks, key players.
+[PLANNER] Generated 4 sub-questions.
+[RESEARCHER 1] Investigating: What are the current government policies and incentives supporting green hydrogen development in India?
+[RESEARCHER 2] Investigating: Who are the major private sector companies investing in green hydrogen production and infrastructure in India?
+[RESEARCHER 3] Investigating: What are the primary cost factors and technical challenges affecting the economic viability of green hydrogen in India?
+[RESEARCHER 3] Completed investigation.
+[RATE LIMIT] Groq TPM limit hit. Waiting 10 seconds before retry...
+[RESEARCHER 1] Completed investigation.
+[RESEARCHER 2] Completed investigation.
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 1/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not comprehensively assess the "drivers" of the investment case for green hydrogen in India, only mentioning government policies and growing demand for clean energy....
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 2/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive analysis of the drivers of the investment case for green hydrogen in India, only mentioning government support and private sector investm...
+[ROUTER] Max iterations reached. Proceeding with current draft.
+[SAVED] Output written to outputs\Assess_the_investment_case_for_green_hydrogen_in_I.md
+
+
+################################################################################
+QUESTION 5 OF 6
+################################################################################
+
+================================================================================
+STARTING: How are major cloud providers pricing GPU compute in 2025, and how do they compare?
+================================================================================
+[PLANNER] Decomposing question: How are major cloud providers pricing GPU compute in 2025, and how do they compare?
+[PLANNER] Generated 3 sub-questions.
+[RESEARCHER 1] Investigating: What are the current pricing models for GPU compute on Amazon Web Services in 2025?
+[RESEARCHER 2] Investigating: How do the pricing models for GPU compute on Microsoft Azure and Google Cloud Platform compare to Amazon Web Services in 2025?
+[RESEARCHER 3] Investigating: What are the discounts and promotions offered by major cloud providers for large-scale GPU compute workloads in 2025?
+[RESEARCHER 1] Completed investigation.
+[RATE LIMIT] Groq TPM limit hit. Waiting 10 seconds before retry...
+[RESEARCHER 2] Completed investigation.
+[RESEARCHER 3] Completed investigation.
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 1/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive comparison of the pricing models across all major cloud providers, as it only mentions AWS, Microsoft Azure, and GCP, but also briefly me...
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 2/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief does not provide a comprehensive comparison of the pricing models across all major cloud providers, as it only mentions AWS, Microsoft Azure, and GCP, but also briefly me...
+[ROUTER] Max iterations reached. Proceeding with current draft.
+[SAVED] Output written to outputs\How_are_major_cloud_providers_pricing_GPU_compute_.md
+
+
+################################################################################
+QUESTION 6 OF 6
+################################################################################
+
+================================================================================
+STARTING: What is the current state of India's semiconductor manufacturing push?
+================================================================================
+[PLANNER] Decomposing question: What is the current state of India's semiconductor manufacturing push?
+[PLANNER] Generated 3 sub-questions.
+[RESEARCHER 1] Investigating: What are the key government initiatives and policies supporting semiconductor manufacturing in India?
+[RESEARCHER 2] Investigating: Which international companies have established or plan to establish semiconductor manufacturing facilities in India?
+[RESEARCHER 3] Investigating: What are the current challenges and infrastructure gaps hindering the growth of India's semiconductor industry?
+[RESEARCHER 1] Completed investigation.
+[RATE LIMIT] Groq TPM limit hit. Waiting 10 seconds before retry...
+[RESEARCHER 3] Completed investigation.
+[RESEARCHER 2] Completed investigation.
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 1/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief lacks specific details about the current state of India's semiconductor manufacturing capabilities, such as the number of fabrication facilities, production capacity, and...
+[SYNTHESISER] Writing research brief...
+[SYNTHESISER] Draft complete.
+[CRITIC] Evaluating draft (Iteration 2/2)...
+[CRITIC] Decision: NEEDS REVISION
+[CRITIC] Feedback: NEEDS_REVISION: 
+1. The brief lacks specific details on the current state of India's semiconductor manufacturing capabilities, such as the number of fabrication facilities, production capacity, and cu...
+[ROUTER] Max iterations reached. Proceeding with current draft.
+[SAVED] Output written to outputs\What_is_the_current_state_of_Indias_semiconductor_.md
+
+================================================================================
+EXECUTION COMPLETE
+================================================================================
+Total questions processed: 6
+Total execution time: 169.95 seconds
+Average time per question: 28.32 seconds
+Metrics saved to: multiagent_metrics.json
+Briefs saved to: /outputs/ directory

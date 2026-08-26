@@ -1,0 +1,68 @@
+# ==========================================
+# 1. Virtual Environments (Crucial to ignore)
+# ==========================================
+venv/
+.venv/
+env/
+.env/
+ENV/
+bin/
+include/
+lib/
+lib64/
+share/
+pyvenv.cfg
+
+# ==========================================
+# 2. Python Compiled Bytecode and Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+# ==========================================
+# 3. Project Configuration & Secrets
+# ==========================================
+Never commit your active secrets/keys!
+.env
+.secrets
+*.env.*
+!*.env.example
+
+# ==========================================
+# 4. Distribution / Build Packages
+# ==========================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# 5. OS and Common IDE Settings
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
