@@ -17,47 +17,7 @@ An end-to-end, enterprise-grade **Retrieval-Augmented Generation (RAG)** pipelin
 
 ## 🏗️ System Architecture & Data Flow
 
-```mermaid
-graph TD
-    %% 1. INGESTION LAYER
-    subgraph Ingestion ["1. Ingestion & Conversion Layer"]
-        PDF["Raw Corporate PDFs <br/>(Apple, Unilever, Coca-Cola)"] -->|Docling PyPdfiumBackend| MD["Clean Markdown Files <br/>(./output_md/*.md)"]
-    end
-
-    %% 2. STORAGE & INDEXING LAYER
-    subgraph Storage ["2. Storage & Indexing Layer"]
-        MD -->|RecursiveCharacterTextSplitter <br/>chunk_size=1024, overlap=200| Nodes["Text Nodes with Metadata <br/>(source_file, chunk_index)"]
-        Nodes -->|BAAI/bge-base-en-v1.5| Embeddings["Vector Embeddings"]
-        Embeddings -->|VectorStoreIndex| Disk["Persistent Disk Storage <br/>(./storage_index/)"]
-    end
-
-    %% 3. RETRIEVAL & RERANKING LAYER
-    subgraph Retrieval ["3. Retrieval & Neural Reranking Layer"]
-        Query["User Query Input"] -->|Load from Disk| Disk
-        Disk -->|similarity_top_k=15| Coarse["Coarse Vector Matches"]
-        Coarse -->|BAAI/bge-reranker-base (top_n=3)| Reranked["Neural Reranked Chunks"]
-    end
-
-    %% 4. GENERATION & EVALUATION LAYER
-    subgraph Generation ["4. Generation & Evaluation Layer"]
-        Reranked -->|Grounded Prompt Template| Groq["Groq LLM Engine <br/>(openai/gpt-oss-120b)"]
-        Groq --> Response["Grounded Markdown Response & Citations"]
-        Response --> Eval["Automated LLM Judge Scorecard <br/>(Faithfulness, Relevance, Conciseness)"]
-    end
-
-    %% 5. SERVING LAYER
-    subgraph Serving ["5. Serving Architecture"]
-        Response --> FastAPI["FastAPI Bridge API <br/>(/ask endpoint)"]
-        Eval --> FastAPI
-        FastAPI --> Streamlit["Streamlit UI / Notebook"]
-    end
-
-    style Ingestion fill:#f9f,stroke:#333,stroke-width:2px
-    style Storage fill:#bbf,stroke:#333,stroke-width:2px
-    style Retrieval fill:#bfb,stroke:#333,stroke-width:2px
-    style Generation fill:#ff9,stroke:#333,stroke-width:2px
-    style Serving fill:#fbb,stroke:#333,stroke-width:2px
-```
+<img width="542" height="337" alt="image" src="https://github.com/user-attachments/assets/deeae0cf-a615-4ecd-b8ea-ab629bda4e32" />
 
 ---
 
