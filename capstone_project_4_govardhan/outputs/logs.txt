@@ -1,0 +1,496 @@
+Initializing Docling Document Converter (loading models)...
+Found 10 PDF files to process.
+
+ Processing: 2025_Climate-Related_Disclosures_Report_General_Motors.pdf
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 5696.94it/s]
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 10 is outside page bounds: value=-8.533014297485352 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+ Saved to: output_md\2025_Climate-Related_Disclosures_Report_General_Motors.md (43.06s)
+--- Chunking Content for: 2025_Climate-Related_Disclosures_Report_General_Motors.pdf ---
+Generated 165 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': '2025_Climate-Related_Disclosures_Report_General_Motors.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': '2025_Climate-Related_Disclosures_Report_General_Motors.pdf', 'chunk_index': 1}
+ Processing: 2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf
+ Saved to: output_md\2026-Microsoft-Environmental-Sustainability-Report-PDF.md (96.70s)
+--- Chunking Content for: 2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf ---
+Generated 251 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': '2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': '2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf', 'chunk_index': 1}
+ Processing: Apple_Environmental_Progress_Report_2024.pdf
+ Saved to: output_md\Apple_Environmental_Progress_Report_2024.md (258.30s)
+--- Chunking Content for: Apple_Environmental_Progress_Report_2024.pdf ---
+Generated 585 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'Apple_Environmental_Progress_Report_2024.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'Apple_Environmental_Progress_Report_2024.pdf', 'chunk_index': 1}
+ Processing: google-2024-environmental-report.pdf
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 33 is outside page bounds: value=-10.359983444213867 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+ Saved to: output_md\google-2024-environmental-report.md (264.07s)
+--- Chunking Content for: google-2024-environmental-report.pdf ---
+Generated 649 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'google-2024-environmental-report.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'google-2024-environmental-report.pdf', 'chunk_index': 1}
+ Processing: google-sustainable-2026-download-1699a2e1.pdf
+2026-10-10 20:23:31,235 MatchingPostProcessor WARNING  1 of 42 pdf cells matched neither a row nor a column band of the 5x9 grid and were dropped from the table
+ Saved to: output_md\google-sustainable-2026-download-1699a2e1.md (319.88s)
+--- Chunking Content for: google-sustainable-2026-download-1699a2e1.pdf ---
+Generated 749 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'google-sustainable-2026-download-1699a2e1.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'google-sustainable-2026-download-1699a2e1.pdf', 'chunk_index': 1}
+ Processing: ikea-cooking-eating-report-2026.pdf
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-24.561721801757812 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-32.782020568847656 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-36.36906051635742 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-26.915821075439453 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-32.69493865966797 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-48.23877716064453 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-57.60493469238281 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-83.06295776367188 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-84.05936431884766 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-107.02638244628906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-111.21126556396484 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-134.57684326171875 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-130.84033203125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-155.40159606933594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-25.13823890686035 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-50.96929931640625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-79.61579895019531 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-14.579219818115234 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-17.687679290771484 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-42.248939514160156 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-79.54603576660156 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-100.12169647216797 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-106.10009765625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-122.93926239013672 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-131.15956115722656 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-134.74659729003906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-13.441240310668945 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-28.98508071899414 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-38.699974060058594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-64.15799713134766 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-72.3782958984375 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-75.96533203125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-28.449338912963867 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-32.63421630859375 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-55.99979782104492 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-59.08863830566406 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-83.64990234375 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-109.50790405273438 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-138.15440368652344 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-15.395120620727539 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-60.54905700683594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-77.38822174072266 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-83.1673355102539 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-98.71117401123047 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-108.42607116699219 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-133.88409423828125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-142.10440063476562 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-145.69143676757812 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-30.971637725830078 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-51.547298431396484 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-57.52569580078125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-74.36486053466797 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-82.58515930175781 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-86.17219543457031 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-19.730838775634766 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-23.915719985961914 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-47.28129959106445 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-50.370140075683594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-74.93140411376953 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-100.78939819335938 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-129.43589782714844 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-11.181440353393555 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-43.862701416015625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-72.50920104980469 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-117.18965911865234 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-134.02882385253906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-139.8079376220703 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-155.35177612304688 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-164.7179412841797 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-190.17596435546875 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-191.17236328125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-214.13938903808594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-218.32427978515625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-241.68984985351562 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-237.95333862304688 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-262.5146179199219 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-20.355140686035156 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-40.93080139160156 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-47.158302307128906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-63.99746322631836 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-68.72589874267578 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-86.5658950805664 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-87.72589111328125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-106.1658935546875 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-105.24589538574219 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-125.68589782714844 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-128.40591430664062 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-142.52590942382812 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-148.1259002685547 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-168.1259002685547 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-175.60589599609375 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-178.4858856201172 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-15.647119522094727 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-60.80095672607422 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-77.64012145996094 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-83.41924285888672 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-98.96308135986328 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-108.677978515625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-134.13600158691406 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-142.35629272460938 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-145.94332885742188 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-32.226219177246094 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-34.11937713623047 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-57.08639907836914 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-61.271278381347656 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-84.6368637084961 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-87.72570037841797 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-112.2869644165039 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-138.154296875 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-166.80079650878906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-13.176939964294434 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-17.369138717651367 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-40.734718322753906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-43.82355499267578 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-68.38481903076172 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-105.7015380859375 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-126.2771987915039 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-132.25559997558594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-149.09475708007812 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-157.3150634765625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-160.902099609375 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-19.5063419342041 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-42.87192153930664 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-34.352699279785156 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-61.703880310058594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-106.87755584716797 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-123.71672058105469 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-129.49583435058594 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-145.0396728515625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-154.75457763671875 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-180.2126007080078 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-188.43289184570312 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-192.01992797851562 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-11.044319152832031 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-24.617300033569336 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-42.652137756347656 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-51.47027587890625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-69.50511932373047 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-72.24522399902344 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-94.4649429321289 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-96.35810089111328 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-119.32511901855469 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-123.5099868774414 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-146.8755645751953 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-149.96441650390625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-174.5256805419922 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-200.4293975830078 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-229.07589721679688 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-28.33365821838379 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-45.17281723022461 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-50.951942443847656 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-66.49578094482422 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-75.8619384765625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-101.31996154785156 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-102.31636047363281 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-125.28337860107422 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-129.46826171875 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-152.83383178710938 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-155.92266845703125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-180.4839324951172 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-217.79653930664062 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-238.3721923828125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-244.35060119628906 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-261.18975830078125 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 1 is outside page bounds: value=-269.4100646972656 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 1 is outside page bounds: value=-272.9971008300781 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 1 is outside page bounds: value=1948.749267578125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1944.137939453125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1943.676025390625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1943.906982421875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1950.638916015625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1946.876953125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1952.8170166015625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1957.60205078125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1967.072998046875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1964.697021484375 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1982.97900390625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1944.1380615234375 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1957.14013671875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1972.1551513671875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1943.01611328125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1965.0567626953125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 6 is outside page bounds: value=1955.3580322265625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 12 is outside page bounds: value=1949.7930908203125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 12 is outside page bounds: value=1944.843017578125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 12 is outside page bounds: value=1946.69091796875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 12 is outside page bounds: value=1949.925048828125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 16 is outside page bounds: value=1097.4241943359375 > hi=1080.0; clamping to 1080.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 20 is outside page bounds: value=1110.3443603515625 > hi=1080.0; clamping to 1080.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 20 is outside page bounds: value=1091.600341796875 > hi=1080.0; clamping to 1080.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=2014.593994140625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1943.3079833984375 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1954.593994140625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1944.760009765625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=2003.3079833984375 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1967.700927734375 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1994.0679931640625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1989.9759521484375 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1980.571044921875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=2004.760009765625 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 27 is outside page bounds: value=1971.72705078125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 32 is outside page bounds: value=1978.2589111328125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 32 is outside page bounds: value=1949.350830078125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 32 is outside page bounds: value=1966.7088623046875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 32 is outside page bounds: value=1947.89892578125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 32 is outside page bounds: value=1982.0538330078125 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate r on page 32 is outside page bounds: value=1965.2567138671875 > hi=1920.0; clamping to 1920.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 32 is outside page bounds: value=-26.26940155029297 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate t on page 32 is outside page bounds: value=-30.29840087890625 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+d:\G_AI\logicmojo-data-science-ai-nov-2025\.venv\Lib\site-packages\docling_core\types\doc\document.py:302: UserWarning: Provenance bbox coordinate b on page 32 is outside page bounds: value=-56.26940155029297 < lo=0.0; clamping to 0.0
+  prov.bbox = cls._clamp_bbox_to_page(
+ Saved to: output_md\ikea-cooking-eating-report-2026.md (41.97s)
+--- Chunking Content for: ikea-cooking-eating-report-2026.pdf ---
+Generated 41 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'ikea-cooking-eating-report-2026.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'ikea-cooking-eating-report-2026.pdf', 'chunk_index': 1}
+ Processing: Responsible-AI-Transparency-Report-2026.pdf
+ Saved to: output_md\Responsible-AI-Transparency-Report-2026.md (55.52s)
+--- Chunking Content for: Responsible-AI-Transparency-Report-2026.pdf ---
+Generated 289 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'Responsible-AI-Transparency-Report-2026.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'Responsible-AI-Transparency-Report-2026.pdf', 'chunk_index': 1}
+ Processing: sugar-study-methodology-overview.pdf
+ Saved to: output_md\sugar-study-methodology-overview.md (23.50s)
+--- Chunking Content for: sugar-study-methodology-overview.pdf ---
+Generated 60 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'sugar-study-methodology-overview.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'sugar-study-methodology-overview.pdf', 'chunk_index': 1}
+ Processing: The-Future-of-Hospitality-and-Foodservice-Report.pdf
+ Saved to: output_md\The-Future-of-Hospitality-and-Foodservice-Report.md (33.40s)
+--- Chunking Content for: The-Future-of-Hospitality-and-Foodservice-Report.pdf ---
+Generated 37 text chunks ready for embedding.
+
+Chunk 0 Metadata: {'source_file': 'The-Future-of-Hospitality-and-Foodservice-Report.pdf', 'chunk_index': 0}
+Chunk 1 Metadata: {'source_file': 'The-Future-of-Hospitality-and-Foodservice-Report.pdf', 'chunk_index': 1}
+ Processing: unilever-annual-report-and-accounts-2024.pdf
+2026-10-10 20:37:53,485 MatchingPostProcessor WARNING  4 of 49 pdf cells matched neither a row nor a column band of the 2x3 grid and were dropped from the table
+2026-10-10 20:37:59,506 MatchingPostProcessor WARNING  2 of 16 pdf cells matched neither a row nor a column band of the 2x6 grid and were dropped from the table
+2026-10-10 20:44:38,504 MatchingPostProcessor WARNING  2 of 128 pdf cells matched neither a row nor a column band of the 165x10 grid and were dropped from the table

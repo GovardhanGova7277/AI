@@ -1,0 +1,136 @@
+🚀 Initializing automated execution and evaluation for 3 corporate queries...
+
+============================================================
+ PROCESSING QUERY 1/3: 'What are Apple’s goals for carbon neutrality?'
+============================================================
+Loading weights: 100%|██████████| 201/201 [00:00<00:00, 766.81it/s]
+Search and synthesis completed in 4.55s
+
+ Grounded strategic response text output:
+------------------------------------------------------------
+**Apple’s carbon‑neutrality goals**
+
+| Goal | Description | Source |
+|------|-------------|--------|
+| **Carbon neutrality across the entire value chain by 2030** | Apple commits to balancing all remaining unavoidable emissions with high‑quality carbon‑removal credits to achieve net‑zero across its whole carbon footprint. | (Apple_Environmental_Progress_Report_2024.md, chunk_index: 35) |
+| **75 % emissions reduction vs. 2015 baseline** | The company aims to cut its greenhouse‑gas emissions by three‑quarters relative to its 2015 footprint as a prerequisite to reaching net‑zero. | (Apple_Environmental_Progress_Report_2024.md, chunk_index: 160) |
+| **Prioritization of emissions reductions over removal** | Reductions in facilities and supply‑chain emissions are the primary focus; carbon removal is used only for emissions that cannot yet be avoided. | (Apple_Environmental_Progress_Report_2024.md, chunk_index: 160) |
+| **Corporate‑level carbon neutrality achieved** | Apple has been carbon neutral for its own corporate emissions since April 2020, thanks to 100 % renewable electricity and energy‑efficiency measures. | (Apple_Environmental_Progress_Report_2024.md, chunk_index: 175) |
+
+These statements collectively define Apple’s overarching carbon‑neutrality objectives.
+------------------------------------------------------------
+
+ Running automated metric suite...
+   -> Evaluating generated response quality via automated Groq LLM Judges...
+
+ Capstone Evaluation Scorecard for Query 1:
+{
+    "1. Faithfulness (Anti-Hallucination)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "YES"
+    },
+    "2. Relevance (Contextual Accuracy)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "YES"
+    },
+    "3. Conciseness (Summary Efficiency)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "The answer presents the goals in a brief, well\u2011structured table without any unnecessary repetition or filler."
+    }
+}
+
+============================================================
+ PROCESSING QUERY 2/3: 'How does Unilever manage plastic waste?'
+============================================================
+Loading weights: 100%|██████████| 201/201 [00:00<00:00, 729.28it/s]
+Search and synthesis completed in 5.39s
+
+ Grounded strategic response text output:
+------------------------------------------------------------
+**Unilever’s approach to managing plastic waste**
+
+| Action | Description | Source |
+|--------|-------------|--------|
+| **Reduce virgin‑plastic use** | Switch to recycled plastic, design lighter packaging, and develop alternative materials and formats. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 194) |
+| **Introduce plastic‑free or lower‑plastic solutions** | Launch laundry sheets and capsules packaged in cardboard boxes to eliminate or cut plastic. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 194) |
+| **Reuse‑refill pilots** | Conducted > 50 pilots worldwide since 2021 to test reusable and refillable packaging models. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 194) |
+| **Collaborate on industry initiatives** | Participate in programs led by the World Economic Forum, Ellen MacArthur Foundation, and Consumer Goods Forum to scale reusable packaging. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 194) |
+| **Develop next‑generation packaging** | Create reusable, recyclable or compostable materials; separate rigid from hard‑to‑recycle flexible formats to apply tailored solutions. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 195) |
+| **Introduce recyclable components** | Launched a recyclable pump for Vaseline bottles in North America (2024). | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 195) |
+| **Explore paper‑based alternatives** | Future Flexibles programme tests recyclable/compostable paper‑based materials; moved some products (e.g., Knorr bouillon cubes in the UK) to paper‑plastic solutions. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 195) |
+| **Support collection & processing** | Back initiatives that expand waste‑management systems, prevent environmental leakage, and curb micro‑plastic release. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 195) |
+| **Advocate for policy & EPR** | Endorse Extended Producer Responsibility (EPR) schemes, packaging‑design rules, recycled‑content targets, and a legally binding UN treaty to harmonise global standards. | (Source File: unilever-annual-report-and-accounts-2024-243-293.md, Chunk: 770) |
+
+**Summary**  
+Unilever manages plastic waste by (1) reducing virgin‑plastic input, (2) redesigning products and packaging to be lighter, recyclable, compostable or paper‑based, (3) piloting and scaling reusable/refill models, (4) collaborating with industry bodies, (5) supporting collection and processing infrastructure, and (6) influencing public policy through EPR schemes and global regulatory advocacy.
+------------------------------------------------------------
+
+ Running automated metric suite...
+   -> Evaluating generated response quality via automated Groq LLM Judges...
+
+ Capstone Evaluation Scorecard for Query 2:
+{
+    "1. Faithfulness (Anti-Hallucination)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "YES"
+    },
+    "2. Relevance (Contextual Accuracy)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "YES"
+    },
+    "3. Conciseness (Summary Efficiency)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 4,
+        "Judge Explanation": "The answer is clear and well\u2011organized, summarizing key actions without unnecessary repetition, though the extensive table adds length that could be trimmed for tighter conciseness."
+    }
+}
+
+============================================================
+ PROCESSING QUERY 3/3: 'What steps has Coca-Cola taken to reduce water usage?'
+============================================================
+Loading weights: 100%|██████████| 201/201 [00:00<00:00, 667.97it/s]
+Search and synthesis completed in 4.77s
+
+ Grounded strategic response text output:
+------------------------------------------------------------
+**Coca‑Cola’s actions to reduce water usage**
+
+| Action | Evidence |
+|--------|----------|
+| Adopt a **local approach** to water security, tailoring initiatives to each community. | “Because water is local, we take a local approach to increase water security.” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 19) |
+| **Promote water stewardship** and improve water‑use efficiency across its operations. | “We're focused on promoting water stewardship, increasing water use efficiency in our operations…” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 19) |
+| **Treat and return safe water** to communities and the environment. | “…treating and returning safe water to communities.” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 19) |
+| **Replenish water** by returning more water to nature and communities than is used in finished beverages. | “We have replenished more than 100% of the water used in our finished beverages every year since 2015.” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 19) |
+| Achieve a **10 % improvement in water‑efficiency** across all system operations in 2024 versus the 2015 baseline. | “10% OF WATER EFFICIENCY IMPROVEMENT ACROSS ALL SYSTEM OPERATIONS IN 2024, COMPARED TO 2015.” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 19) |
+| Reduce the **water‑use ratio** from 1.98 L/L (2015 baseline) to **1.78 L/L** in 2024. | “In 2024, the water use ratio was 1.78 liters of water used per liter of beverage.” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 19) |
+| Define water‑efficiency as **reduction versus the 2015 baseline** (1.98 L/L). | “Water efficiency is the reduction of our water use ratio versus a 2015 baseline year (1.98 for the Coca‑Cola system).” (Source File: 2024-coco-cola-environmental-update.md, chunk_index: 18) |
+
+These steps collectively illustrate Coca‑Cola’s strategy to lower water consumption and enhance water stewardship in its operations.
+------------------------------------------------------------
+
+ Running automated metric suite...
+   -> Evaluating generated response quality via automated Groq LLM Judges...
+
+ Capstone Evaluation Scorecard for Query 3:
+{
+    "1. Faithfulness (Anti-Hallucination)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "YES"
+    },
+    "2. Relevance (Contextual Accuracy)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 5,
+        "Judge Explanation": "YES"
+    },
+    "3. Conciseness (Summary Efficiency)": {
+        "Assessment": "PASSED",
+        "Score (1-5 Scale)": 4,
+        "Judge Explanation": "The answer is clear and well\u2011summarized using a concise table, though the repeated citation excerpts add slight verbosity."
+    }
+}
